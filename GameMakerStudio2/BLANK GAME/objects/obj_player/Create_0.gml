@@ -5,6 +5,8 @@ jumpForce = 7;
 walkSpeed = 5;
 gravSpeed = .2;
 
+instance_create_layer(x,y,"dark",obj_dark)
+obj_dark.image_alpha = 0
 directionn = 1
 //0 left
 //1 right

@@ -9,8 +9,8 @@
   "name":"obj_dark",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"DarkLight",
+    "path":"folders/Objects/DarkLight.yy",
   },
   "parentObjectId":null,
   "persistent":false,
