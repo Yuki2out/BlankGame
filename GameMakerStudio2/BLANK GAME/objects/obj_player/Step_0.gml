@@ -9,8 +9,6 @@ keyInteract = keyboard_check_pressed(ord("E"))
 if (keyLeft) directionn = 0
 if (keyRight) directionn = 1
 
-obj_dark.x = x
-obj_dark.y = y
 
 switch (state)
 {

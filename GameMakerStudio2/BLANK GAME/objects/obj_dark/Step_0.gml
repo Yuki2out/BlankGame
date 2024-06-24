@@ -7,5 +7,5 @@ var cam = view_camera[0];
 var view_x = view_get_xport(cam)
 var view_y = view_get_yport(cam);
 
-x = view_x
-y = view_y
+x = obj_player.x
+y = obj_player.y

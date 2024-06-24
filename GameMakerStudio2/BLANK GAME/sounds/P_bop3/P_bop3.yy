@@ -12,8 +12,8 @@
   "duration":0.130612,
   "name":"P_bop3",
   "parent":{
-    "name":"Player",
-    "path":"folders/Sounds/playerSFX/Player.yy",
+    "name":"Bops",
+    "path":"folders/Sounds/playerSFX/Bops.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

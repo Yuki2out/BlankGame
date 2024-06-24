@@ -5,6 +5,8 @@
 if (place_meeting(x,y,obj_player) && keyboard_check_pressed(ord("E")) && (dialog_page <= array_length(dialog))){
 	talk = true
 	global.dialog = true
+	global.camFollow = obj_merenge
+	global.camFollowY = 40
 	if(dialog_page != array_length(dialog) - 1)
 	{
 		var audio_bop = choose(P_bop1, P_bop2, P_bop3)
@@ -17,6 +19,8 @@ if (place_meeting(x,y,obj_player) && keyboard_check_pressed(ord("E")) && (dialog
 		talk = false
 		global.dialog = false
 		dialog_page = -1
+		global.camFollow = obj_player
+		global.camFollowY = 60
 	}
 	
 }
@@ -59,7 +63,7 @@ if (talk){
 		//}
 		
 		draw_text( view_x + 530 ,view_y + 600  , dialog[dialog_page]);
-		
+		global.lightsEffect = true;
 	}
 	
 	

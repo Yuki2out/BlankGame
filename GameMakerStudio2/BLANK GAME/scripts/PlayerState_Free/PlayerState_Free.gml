@@ -29,6 +29,7 @@ function PlayerState_Free(){
 
 
 	if (place_meeting(x,y+vSpeed, obj_collision)) {
+
   
 	  var onePixel = sign(vSpeed);
 	  while (!place_meeting(x,y+onePixel, obj_collision))  y += onePixel;
@@ -53,6 +54,8 @@ function PlayerState_Free(){
 
 	}
 	
+
+	
 	
 	//if (keyInteract && place_meeting(x,y,NPCs)) Dialog_system();
 	
@@ -60,6 +63,18 @@ function PlayerState_Free(){
 	//if (keyboard_check(ord("W")) && mouse_check_button_pressed(mb_left)) {
 	//	state = PLAYERSTATE.ATTACK_SLASH_UP	
 	//} 
+	
+	
+
+	if (keyboard_check(ord("D")) ||keyboard_check(ord("A") ))
+	{
+	
+		
+		audio_resume_sound(footsteps_cellar)	
+	
+	}else{
+				audio_pause_sound(footsteps_cellar)	
+	}
 	
 	if (global.dialog == true ) state = PLAYERSTATE.DIALOG;
 	
