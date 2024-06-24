@@ -8,10 +8,10 @@ if (global.lightsEffect)
 {
 	
 	if (!place_meeting(x,y,ligts)){
-		if (obj_dark.image_alpha < 1){
+		if (obj_dark.image_alpha < 0.70){
 			obj_dark.image_alpha += fuel	
 		}
-		if (obj_light_player.image_alpha > 0.2){
+		if (obj_light_player.image_alpha > 0.4){
 			obj_light_player.image_alpha -= fuel	
 		}
 	
@@ -21,7 +21,7 @@ if (global.lightsEffect)
 			obj_dark.image_alpha -= 0.01	
 			
 		}
-		if (obj_light_player.image_alpha < 0.40){
+		if (obj_light_player.image_alpha < 0.80){
 			
 			obj_light_player.image_alpha += 0.01	
 			
