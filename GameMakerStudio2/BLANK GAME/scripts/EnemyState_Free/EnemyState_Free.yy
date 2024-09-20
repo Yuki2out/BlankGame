@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"EnemyState_Free",
   "isCompatibility":false,
   "isDnD":false,

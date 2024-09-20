@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+sinewave = 0.3
+
 talk = false
 alr = false
 flipped = false

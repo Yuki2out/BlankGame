@@ -26,7 +26,7 @@
   "origin":1,
   "parent":{
     "name":"Lights",
-    "path":"folders/Sprites/Lights.yy",
+    "path":"folders/Sprites/Light/Lights.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -1,5 +1,6 @@
 function PlayerState_Free(){
-
+	
+	time_dark = 90
 	
 	hSpeed = (keyRight - keyLeft) * walkSpeed;
 
@@ -20,8 +21,11 @@ function PlayerState_Free(){
   
 	  var onePixel = sign(hSpeed);
 	  while (!place_meeting(x+onePixel, y, obj_collision))  x += onePixel;
+	
 	  hSpeed = 0;
 	  
+	}else{
+		
 	}
 
 
@@ -38,24 +42,32 @@ function PlayerState_Free(){
 	
 	y += vSpeed;
 
-
 	if (hSpeed != 0) {
-		if (hSpeed < 0) image_xscale = -1;
-		else image_xscale = 1
-		 
-		  if (sprite_index != s_player) image_index = 1;
-		 
-		  sprite_index = s_player
+	    if (hSpeed < 0) image_xscale = -1;
+	    else image_xscale = 1;
+    
+	    // Only change the sprite if it is not already the walking sprite
+	    if (sprite_index != s_player_walking) {
+	        sprite_index = s_player_walking;
+	        image_index = 0; // Reset the animation to the start
+	    }
+	} else {
+	    // Only change the sprite if it is not already the idle sprite
+	    if (sprite_index != s_player) {
+	        sprite_index = s_player;
+	        image_index = 0; // Reset the animation to the start
+	    }
+	}
+
 	
+	if (keyboard_check(vk_shift)){
+		walkSpeed = 5;
 	}else{
-
-		//sprite_index = s_player_idle
-		sprite_index = s_player
-
+		walkSpeed = 3;	
 	}
 	
-
 	
+
 	
 	//if (keyInteract && place_meeting(x,y,NPCs)) Dialog_system();
 	
@@ -73,11 +85,11 @@ function PlayerState_Free(){
 		audio_resume_sound(footsteps_cellar)	
 	
 	}else{
-				audio_pause_sound(footsteps_cellar)	
+		audio_pause_sound(footsteps_cellar)	
 	}
 	
 	if (global.dialog == true ) state = PLAYERSTATE.DIALOG;
-	
+	if (keyAttack) state = PLAYERSTATE.ATTACK_POWER1
 		
 }
 	

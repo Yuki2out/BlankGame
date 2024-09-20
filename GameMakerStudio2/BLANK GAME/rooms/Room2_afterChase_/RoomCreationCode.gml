@@ -1,0 +1,1 @@
+global.lightsEffect = false

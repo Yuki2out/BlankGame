@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"P_bop2.mp3",
   "type":0,
-  "volume":0.38,
+  "volume":0.7,
 }

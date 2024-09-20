@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function EnemyState_attacking(){
 	flip = false
-	
+
 	move_towards_point(obj_player.x,y,2)
 	if (x > obj_player.x){
 		if(flip == false){

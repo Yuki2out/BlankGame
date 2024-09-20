@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"slime_splatter",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.408,
+  "name":"slime_splatter",
+  "parent":{
+    "name":"SFX",
+    "path":"folders/Sounds/SFX.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"slime_splatter.mp3",
+  "type":0,
+  "volume":0.64,
+}

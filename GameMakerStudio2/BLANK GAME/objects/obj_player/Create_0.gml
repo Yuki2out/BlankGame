@@ -2,8 +2,17 @@
 hSpeed = 2;
 vSpeed = 2;
 jumpForce = 7;
-walkSpeed = 2;
+walkSpeed = 3;
 gravSpeed = .2;
+
+sinewave = 0.3
+
+global.power = 0
+//1
+//2
+//3
+
+
 
 trigger = true
 audio_play_sound(footsteps_cellar,10,true)
@@ -12,10 +21,11 @@ fuel = 0.001
 
 ligts = [obj_light,obj_light_circle_candle]
 
+
 instance_create_layer(x,y,"dark",obj_dark)
-instance_create_layer(x- 5,y + 10,"light",obj_light_player)
+//instance_create_layer(x- 5,y + 10,"light",obj_light_player)
 obj_dark.image_alpha = 0
-obj_light_player.image_alpha = 0
+//obj_light_player.image_alpha = 0
 
 global.lightsEffect = false
 
@@ -35,16 +45,20 @@ player_was_hitted = false
 
 hit_play = false
 
+time_dark = 90
+
 state = PLAYERSTATE.FREE
+player_state_for_timer = state
 hitByAttack = ds_list_create()
 
 enum PLAYERSTATE
 {
 	HITTED,
 	FREE,
-	ATTACK_SLASH,
-	ATTACK_SLASH_UP,
-	ATTACK_COMBO,
-	DIALOG
+	ATTACK_POWER1,
+	DIALOG,
+	DEATH
 	
 }
+
+

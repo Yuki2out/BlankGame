@@ -1,6 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-draw_self()
 
 
 
@@ -11,31 +10,37 @@ if (global.lightsEffect)
 		if (obj_dark.image_alpha < 0.70){
 			obj_dark.image_alpha += fuel	
 		}
-		if (obj_light_player.image_alpha > 0.4){
-			obj_light_player.image_alpha -= fuel	
+		
+		if (obj_dark.image_alpha >= 0.55){
+			if (sinewave < 0.8){
+				sinewave += 0.01
+			}
+		
+			
 		}
-	
+
+
 	}else{
-		if (obj_dark.image_alpha > 0){
+		if (obj_dark.image_alpha > 0.3){
 			
 			obj_dark.image_alpha -= 0.01	
 			
 		}
-		if (obj_light_player.image_alpha < 0.80){
+
+		if (sinewave > 0.3){
+			sinewave -= 0.01
+		}			
 			
-			obj_light_player.image_alpha += 0.01	
-			
-		}
+		
 	
 	}
+}else{
+	obj_dark.image_alpha = 0.3
+		
 }
 
 
-enemyX = obj_player.x - random_range(-20,20)
-for (var i = 0; i = 2; i++) {
-	audio_play_sound(P_bop1,10,false)
-	instance_create_layer(enemyX,obj_player.y,"enemy",obj_enemy)
-}
+
 
 // Get the camera position and size
 var cam_x = camera_get_view_x(view_camera[0]);
@@ -51,8 +56,16 @@ var cam_y = camera_get_view_y(view_camera[0]);
 var sprite_x = cam_x;
 var sprite_y = cam_y;
 
+gpu_set_blendmode(bm_add)
+
+for(c = 0; c < 360;c +=20){
+	draw_sprite_ext(sprite_index,image_index,x + lengthdir_x(6,c), y + lengthdir_y(6,c),image_xscale,image_yscale,image_angle,image_blend,sinewave * 0.1)	
+}
+gpu_set_blendmode(bm_normal)
+
+draw_self()
 // Draw the sprite at the left corner of the camera view
-draw_text(sprite_x, sprite_y,"Fuel left: " + string(obj_dark.image_alpha) );
-draw_text(sprite_x, sprite_y + 20,"Player light: " + string(obj_light_player.image_alpha) );
+//draw_text(sprite_x, sprite_y,"Fuel left: " + string(obj_dark.image_alpha) );
+//draw_text(sprite_x, sprite_y + 20,"Player light: " + string(sinewave) );
 
 

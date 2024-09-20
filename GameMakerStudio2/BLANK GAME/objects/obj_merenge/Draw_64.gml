@@ -21,6 +21,7 @@ if (place_meeting(x,y,obj_player) && keyboard_check_pressed(ord("E")) && (dialog
 		dialog_page = -1
 		global.camFollow = obj_player
 		global.camFollowY = 60
+		draw_set_font(-1)
 	}
 	
 }
@@ -37,6 +38,7 @@ if (talk){
 	
 
 	draw_set_font(Font)
+	
 	// Draw the dialog box sprite at a position relative to the camera's view
 	draw_sprite(s_dialog_box, 0, view_x + 200, view_y + 200);
 
@@ -63,7 +65,7 @@ if (talk){
 		//}
 		
 		draw_text( view_x + 530 ,view_y + 600  , dialog[dialog_page]);
-		global.lightsEffect = true;
+		
 	}
 	
 	

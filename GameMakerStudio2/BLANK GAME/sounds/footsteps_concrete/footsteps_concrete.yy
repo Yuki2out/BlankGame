@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"footsteps_concrete.mp3",
   "type":0,
-  "volume":0.22,
+  "volume":1.0,
 }

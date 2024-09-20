@@ -28,7 +28,7 @@
   "origin":4,
   "parent":{
     "name":"Candles",
-    "path":"folders/Sprites/Candles.yy",
+    "path":"folders/Sprites/Light/Candles.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
