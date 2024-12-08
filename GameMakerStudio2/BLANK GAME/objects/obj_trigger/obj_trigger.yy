@@ -38,5 +38,5 @@
     "path":"sprites/s_yellow/s_yellow.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

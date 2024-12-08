@@ -31,7 +31,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"s_cameraIcon",
+    "path":"sprites/s_cameraIcon/s_cameraIcon.yy",
+  },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

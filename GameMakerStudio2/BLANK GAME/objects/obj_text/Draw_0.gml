@@ -1,3 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-textDisplay = textDisplay;
+
+
+draw_text(x - SetX,y - SetY , text)

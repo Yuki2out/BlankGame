@@ -30,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"s_managerIcon",
+    "path":"sprites/s_managerIcon/s_managerIcon.yy",
+  },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

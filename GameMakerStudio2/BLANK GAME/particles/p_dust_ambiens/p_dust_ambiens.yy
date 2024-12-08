@@ -1,0 +1,25 @@
+{
+  "$GMParticleSystem":"",
+  "%Name":"p_dust_ambiens",
+  "backdropHeight":768,
+  "backdropImageOpacity":0.5,
+  "backdropImagePath":"",
+  "backdropWidth":1366,
+  "backdropXOffset":0.0,
+  "backdropYOffset":0.0,
+  "drawOrder":0,
+  "emitters":[
+    {"$GMPSEmitter":"","%Name":"Emitter","additiveBlend":false,"directionIncrease":0.0,"directionMax":181.0,"directionMin":181.0,"directionWiggle":0.0,"distribution":0,"editorColour":1090519039,"editorDrawShape":true,"emitCount":1,"emitDelayMax":0.0,"emitDelayMin":0.0,"emitDelayUnits":0,"emitIntervalMax":0.0,"emitIntervalMin":0.0,"emitIntervalUnits":0,"enabled":true,"endColour":4294967295,"GMPresetName":null,"gravityDirection":270.0,"gravityForce":0.0,"headPosition":0.0,"lifetimeMax":290.0,"lifetimeMin":290.0,"linkedEmitter":null,"locked":false,"midColour":4294967295,"mode":0,"name":"Emitter","orientationIncrease":0.0,"orientationMax":0.0,"orientationMin":183.0,"orientationRelative":false,"orientationWiggle":0.0,"regionH":771.06024,"regionW":1364.5043,"regionX":17.0,"regionY":12.0,"resourceType":"GMPSEmitter","resourceVersion":"2.0","scaleX":1.0,"scaleY":1.0,"shape":0,"sizeIncrease":0.0,"sizeMax":1.4,"sizeMin":0.1,"sizeWiggle":0.0,"spawnOnDeathCount":1,"spawnOnDeathGMPreset":null,"spawnOnDeathId":null,"spawnOnUpdateCount":1,"spawnOnUpdateGMPreset":null,"spawnOnUpdateId":null,"speedIncrease":0.0,"speedMax":0.2,"speedMin":0.0,"speedWiggle":0.01,"spriteAnimate":false,"spriteId":null,"spriteRandom":false,"spriteStretch":true,"startColour":4294967295,"texture":0,},
+  ],
+  "name":"p_dust_ambiens",
+  "parent":{
+    "name":"Particle Systems",
+    "path":"folders/Particle Systems.yy",
+  },
+  "resourceType":"GMParticleSystem",
+  "resourceVersion":"2.0",
+  "showBackdrop":true,
+  "showBackdropImage":false,
+  "xorigin":0,
+  "yorigin":0,
+}
